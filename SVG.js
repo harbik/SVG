@@ -342,7 +342,7 @@ export class Frame {
     }
     clip(id) {
         if (id)
-            return this.g(id, { 'style': `clip-path: url(#clip${this.id});` });
+            return this.g(id, { 'style': `clip-path: url(#clip${id});` });
         else
             return this.g(undefined, { 'clip-path': `url(#clip${this.id})` });
     }
